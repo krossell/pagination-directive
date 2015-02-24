@@ -1,0 +1,7 @@
+<div class="dataTables_paginate paging_bootstrap">
+    <ul class="fancy pagination">
+        <li class="prev" ng-class="{'disabled':(activePage==1)}"><a href="" ng-click="prevPageSet()" >← Back</a></li>
+        <li ng-repeat="i in currentPagesArray" ng-class="{'active':(activePage==i)}"><a href="" ng-click="getPage(i)">{{i}}</a></li>
+        <li class="next" ng-class="{'disabled':(activePage==fullPagesArry.length)}"><a href=""  ng-click="nextPageSet()">Next → </a></li>
+    </ul>
+</div>
